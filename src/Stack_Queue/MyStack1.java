@@ -6,9 +6,9 @@ public class MyStack1 {
   private Stack<Integer> stackData;
   private Stack<Integer> stackMin;
 
-  public MyStack1(Stack<Integer> stackData, Stack<Integer> stackMin) {
-    this.stackData = stackData;
-    this.stackMin = stackMin;
+  public MyStack1() {
+    this.stackData = new Stack<Integer>();
+    this.stackMin = new Stack<Integer>();
   }
 
   public void push(int newNum) {

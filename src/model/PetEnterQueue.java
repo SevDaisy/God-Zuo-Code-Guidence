@@ -1,4 +1,4 @@
-package model;
+package Model;
 
 public class PetEnterQueue {
   private Pet pet;// 无需继承，创建父类对象即可！！

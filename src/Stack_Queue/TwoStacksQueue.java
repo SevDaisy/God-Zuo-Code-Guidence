@@ -6,9 +6,9 @@ public class TwoStacksQueue {
   private Stack<Integer> stackPush;
   private Stack<Integer> stackPop;
 
-  public TwoStacksQueue(Stack<Integer> stackPush, Stack<Integer> stackPop) {
-    this.stackPush = stackPush;
-    this.stackPop = stackPop;
+  public TwoStacksQueue() {
+    this.stackPush = new Stack<Integer>();
+    this.stackPop = new Stack<Integer>();
   }
 
   private void pushToPop() {
