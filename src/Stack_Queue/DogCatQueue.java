@@ -28,7 +28,7 @@ public class DogCatQueue {
     } else if (pet.getPetType().equals("cat")) {
       this.catQ.add(new PetEnterQueue(pet, this.count++));
     } else {
-      throw new RuntimeException("err, not dog or cat");
+      throw new RuntimeException("ERR!!! NOT dog OR cat");
     }
   }
 
@@ -47,7 +47,7 @@ public class DogCatQueue {
     } else if (!this.catQ.isEmpty()) {
       return this.catQ.poll().getPet();
     } else {
-      throw new RuntimeException("err, queue is empty!");
+      throw new RuntimeException("ERR!!! queue is empty!");
     }
   }
 
@@ -76,5 +76,9 @@ public class DogCatQueue {
 
   public boolean isCatQueueEmpty() {
     return this.catQ.isEmpty();
+  }
+
+  public static void main(String[] args) {
+
   }
 }
